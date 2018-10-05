@@ -6,5 +6,11 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 <configuration>
 	<typeAliases>
 		<typeAlias type="com.level.club.dto.MemberDTO" alias="MemberDTO"></typeAlias>
+		<typeAlias type="com.level.club.dto.CategoryDTO" alias="CategoryDTO"></typeAlias>
+		<typeAlias type="com.level.club.dto.ChatContentDTO" alias="ChatContentDTO"></typeAlias>
+		<typeAlias type="com.level.club.dto.ChatMemberDTO" alias="ChatMemberDTO"></typeAlias>
+		<typeAlias type="com.level.club.dto.ChatRoomDTO" alias="ChatRoomDTO"></typeAlias>
+		<typeAlias type="com.level.club.dto.ClubDTO" alias="ClubDTO"></typeAlias>
+		<typeAlias type="com.level.club.dto.ClubMemberDTO" alias="ClubMemberDTO"></typeAlias>
 	</typeAliases>
 </configuration>
