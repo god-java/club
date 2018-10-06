@@ -1,5 +1,7 @@
 package com.level.club;
 
+import static org.mockito.Mockito.RETURNS_DEEP_STUBS;
+
 import java.io.IOException;
 
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -9,6 +11,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
 @Configuration
 public class DataBaseConfig {
@@ -37,4 +41,6 @@ public class DataBaseConfig {
 		SqlSessionTemplate sqlSessionTemplate = new SqlSessionTemplate((SqlSessionFactory) sqlSessioinFactory);
 		return sqlSessionTemplate;
 	}
+	
+
 }

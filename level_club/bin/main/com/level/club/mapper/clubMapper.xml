@@ -7,4 +7,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="club_info" parameterType="int">
 		select * from lc_club where club_num=#{club_num}	
 	</select>
+	<insert id="club_make_ok" parameterType="ClubDTO">
+		insert into lc_club values(lc_club_seq.nextval,#{cate_num},#{leader_num},#{club_name},#{club_info},default,#{club_main_image})
+	</insert>
 </mapper>

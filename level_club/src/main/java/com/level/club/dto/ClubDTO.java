@@ -8,7 +8,7 @@ public class ClubDTO {
 	private String club_info;
 	private String club_open_date;
 	private String club_main_image;
-	
+
 	public int getClub_num() {
 		return club_num;
 	}
