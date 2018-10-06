@@ -12,29 +12,31 @@ html,body,div,ul,li,a,span{margin:0; padding:0; outline:0; font-size:12px; text-
 ul{font-size:0;}
 a{color:black; text-decoration:none;}
 li{list-style:none;}
-#header{width:90%; height:50px; border-bottom:1px solid black; background:rgba(0,0,0,0.7); position:fixed;
-left:5%; top:5%; -webkit-transition-duration:0.3s; border-radius:10px;}
-#header ul{width:100%; height:50px; display:flex; flex-direction:row;}
-#header li{width:8%; height:30px; line-height:30px; margin-top:10px;}
+#header{width:90%; height:50px; border-bottom:1px solid black; background:rgba(0,0,0,0.5); position:fixed;
+left:5%; top:5%; -webkit-transition-duration:0.3s; border-radius:10px; z-index:9999;}
+#header ul{width:100%; height:50px; text-align:left;}
+#header li{width:8%; height:30px; line-height:30px; margin-top:10px; display:inline-block;}
+#header li:first-child{margin-left:5%;}
 #header a{color:#D8D8D8;}
 
 #top{width:100%; height:300px; background-image:url('resources/background_image/main2.jpg'); background-size:contain;
 background-position:center top;}
 
-#center{width:100%; height:1000px;}
+#center{width:100%;}
 </style>
 </head>
 <body>
 	<div id="header">
 		<ul>
-			<li><a href="#">LC</a></li>
+			<li><a href="main">LC</a></li>
 			<li><a href="#">카테고리별</a></li>
 			<li><a href="#">BEST</a></li>
-			<c:if test="${member_num==null }">
-				<li><a href="login">로그인</a></li>
-				<li><a href="join">회원가입</a></li>
-			</c:if>
+			<li><a href="club_make">동호회 만들기</a>
 			<li><a href="#"><input type="text"></a></li>
+			<c:if test="${member_num==null }">
+				<li style="float:right; margin-right:5%;"><a href="login">로그인</a></li>
+				<li style="float:right;"><a href="join">회원가입</a></li>
+			</c:if>
 		</ul>
 	</div>
 	<div id="top">
