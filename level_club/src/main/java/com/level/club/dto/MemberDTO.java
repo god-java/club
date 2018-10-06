@@ -1,7 +1,6 @@
 package com.level.club.dto;
 
 public class MemberDTO {
-
 	private int member_num;
 	private String id;
 	private String password;
@@ -10,6 +9,7 @@ public class MemberDTO {
 	private String email;
 	private String phone;
 	private String join_date;
+	
 	public int getMember_num() {
 		return member_num;
 	}
@@ -57,6 +57,5 @@ public class MemberDTO {
 	}
 	public void setJoin_date(String join_date) {
 		this.join_date = join_date;
-	}
-	
+	}	
 }

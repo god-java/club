@@ -1,10 +1,10 @@
 package com.level.club.dto;
 
 public class CategoryDTO {
-
 	private int cate_num;
 	private String cate_name;
 	private String cate_image;
+	
 	public int getCate_num() {
 		return cate_num;
 	}
